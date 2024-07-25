@@ -1,352 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-   <!-- Header Section Started -->
-    <div id="headerh">
-      <div class="containerh">
-        <nav>
-          <img src="./Image/Logo1.jpeg" class="logoh" />
-           <ul id="sidemenu">
-            <li class="btnh"><a href="#headerh">Home</a></li>
-            <li class="btnh"><a href="#about">About</a></li>
-            <li class="btnh"><a href="#skills">Skills</a></li>
-            <li class="btnh"><a href="#hobbies">Hobbies</a></li>
-            <li class="btnh"><a href="#contact">Contact</a></li>
-              <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-           <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-           <div class="header-text">
-          <p>Full Stack Developer</p>
-          <h1>
-            Hi, I'm <span>Anand Tripathi</span
-            ><br />&nbsp;&nbsp;&nbsp;&nbsp;From Uttar Pradesh
-          </h1>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anand Tripathi Portfolio</title>
+  <link rel="icon" href="./Image/Profile-modified.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <!-- Header Section Started -->
+  <div id="headerh">
+    <div class="containerh">
+      <nav>
+        <img src="./Image/Logo1.jpeg" class="logoh" />
+        <ul id="sidemenu">
+          <li class="btnh"><a href="#headerh">Home</a></li>
+          <li class="btnh"><a href="#about">About</a></li>
+          <li class="btnh"><a href="#skills">Skills</a></li>
+          <li class="btnh"><a href="#hobbies">Hobbies</a></li>
+          <li class="btnh"><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+      <p><img src="https://readme-typing-svg.herokuapp.com/?&size=35&duration=3000&lines=Hi+There!+👋;+I'm+Anand Tripathi+!;" alt="Typing SVG"></p>
+        <h1>A Passionate👨‍💻<br><span>Java Full Stack Developer</span> From India</h1>
       </div>
     </div>
-    <!-- Header Section Ended -->
-    <!-- Begining Of About Section -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="./Image/Profile-modified.png" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p class="pra">
-              “I am Anand Tripathi, a highly motivated student with a strong
-              background in Java and a Bachelor’s degree in Computer
-              Applications (BCA). I have a proven ability to design, develop,
-              and deploy scalable web applications. I am committed to continuous
-              learning and staying updated with emerging trends in software
-              development.”
+  </div>
+  <!-- Header Section Ended -->
+  <!-- Begining Of About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./Image/Profile-modified.png" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p class="pra">
+            “I am Anand Tripathi, a highly motivated student with a strong
+            background in Java and a Bachelor’s degree in Computer
+            Applications (BCA). I have a proven ability to design, develop,
+            and deploy scalable web applications. I am committed to continuous
+            learning and staying updated with emerging trends in software
+            development.”
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
             </p>
-
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>
-                  <span>Communication Skills</span> <br />Proficient in verbal
-                  and written communication, adept at conveying ideas clearly.
-                </li>
-                <li>
-                  <span>Problem-Solving</span> <br />Experienced in identifying
-                  and resolving complex problems effectively.
-                </li>
-                <li>
-                  <span>Critical Thinking</span> <br />Skilled in analyzing
-                  information and making reasoned judgments.
-                </li>
-                <li>
-                  <span>Time Management</span> <br />Capable of prioritizing
-                  tasks and meeting deadlines efficiently.
-                </li>
-                <li>
-                  <span>Creative Writing</span> <br />Proficient in crafting
-                  engaging and original content across various genres.
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>Intermediate Level of Java:</span><br />Proficient in
-                  Java programming with knowledge of core concepts and
-                  object-oriented principles.
-                </li>
-                <li>
-                  <span>Good knowledge of SQL:</span><br />Experienced in
-                  designing and working with relational databases using SQL.
-                </li>
-                <li>
-                  <span>HTML, Bootstrap, Tailwind CSS, CSS:</span><br />Skilled
-                  in front-end web development, creating visually appealing and
-                  responsive user interfaces using HTML, CSS, and frameworks
-                  like Bootstrap and Tailwind CSS.
-                </li>
-                <li>
-                  <span>JavaScript:</span><br />Proficient in client-side
-                  scripting with JavaScript, utilizing libraries and frameworks
-                  like React and jQuery to develop dynamic and interactive web
-                  applications.
-                </li>
-                <li>
-                  <span>MongoDB:</span><br />Experienced in NoSQL databases,
-                  specifically MongoDB. Designed and implemented MongoDB
-                  schemas, performed complex queries using the MongoDB Query
-                  Language (MQL).
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>Master in Computer Applications (MCA)</span
-                  ><br />Pursuing at YMCA University, Echelon Institute of
-                  Technology-Manjhawali Faridabad, Haryana
-                </li>
-                <li>
-                  <span>Bachelor in Computer Applications (BCA)</span><br />MDU
-                  University, JB Knowledge Park-Manjhawali Faridabad, Haryana
-                </li>
-                <li>
-                  <span>Higher Secondary (12th)</span><br />CBSE Board, Doon
-                  Bharti Public School Sehatpur Faridabad, Haryana
-                </li>
-                <li>
-                  <span>Secondary School (10th)</span><br />ICSE Board, St.
-                  James School & Colleges Raebareli, Uttar Pradesh
-                </li>
-              </ul>
-            </div>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Communication Skills</span> <br />Proficient in verbal
+                and written communication, adept at conveying ideas clearly.
+              </li>
+              <li>
+                <span>Problem-Solving</span> <br />Experienced in identifying
+                and resolving complex problems effectively.
+              </li>
+              <li>
+                <span>Critical Thinking</span> <br />Skilled in analyzing
+                information and making reasoned judgments.
+              </li>
+              <li>
+                <span>Time Management</span> <br />Capable of prioritizing
+                tasks and meeting deadlines efficiently.
+              </li>
+              <li>
+                <span>Creative Writing</span> <br />Proficient in crafting
+                engaging and original content across various genres.
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Intermediate Level of Java:</span><br />Proficient in
+                Java programming with knowledge of core concepts and
+                object-oriented principles.
+              </li>
+              <li>
+                <span>Good knowledge of SQL:</span><br />Experienced in
+                designing and working with relational databases using SQL.
+              </li>
+              <li>
+                <span>HTML, Bootstrap, Tailwind CSS, CSS:</span><br />Skilled
+                in front-end web development, creating visually appealing and
+                responsive user interfaces using HTML, CSS, and frameworks
+                like Bootstrap and Tailwind CSS.
+              </li>
+              <li>
+                <span>JavaScript:</span><br />Proficient in client-side
+                scripting with JavaScript, utilizing libraries and frameworks
+                like React and jQuery to develop dynamic and interactive web
+                applications.
+              </li>
+              <li>
+                <span>MongoDB:</span><br />Experienced in NoSQL databases,
+                specifically MongoDB. Designed and implemented MongoDB
+                schemas, performed complex queries using the MongoDB Query
+                Language (MQL).
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>Master in Computer Applications (MCA)</span
+                ><br />Pursuing at YMCA University, Echelon Institute of
+                Technology-Manjhawali Faridabad, Haryana
+              </li>
+              <li>
+                <span>Bachelor in Computer Applications (BCA)</span><br />MDU
+                University, JB Knowledge Park-Manjhawali Faridabad, Haryana
+              </li>
+              <li>
+                <span>Higher Secondary (12th)</span><br />CBSE Board, Doon
+                Bharti Public School Sehatpur Faridabad, Haryana
+              </li>
+              <li>
+                <span>Secondary School (10th)</span><br />ICSE Board, St.
+                James School & Colleges Raebareli, Uttar Pradesh
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <!-- ------------------------Skills------------------------ -->
-    <div id="skills">
-      <div class="container">
-        <h1 class="sub-title">My SKills</h1>
-        <div class="services-list">
-          <div>
-            <i class="fas fa-code"></i>
-            <h2>Web-Technology</h2>
+  </div>
+  <!-- ------------------------Skills------------------------ -->
+  <div id="skills">
+    <div class="container">
+      <h1 class="sub-title">My SKills</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Web-Technology</h2>
+          <p>
+            I have good knowledge of HTML,CSS & JavaScript which help me to
+            design a beautiful web pages or websites using HTML,CSS &
+            Javascript,i am also learning Bootstrap,Tailwind CSS from Jspider.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fas fa-crop-alt"></i>
+          <h2>Database</h2>
+          <p>
+            I have good knowledge of JDBC,Servlet,Framework & SQL by using
+            these concept i can eaisly perform CRUD opration as well as store
+            Websites data,Applications data,any data in database.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fab fa-app-store"></i>
+          <h2>Programming language</h2>
+          <p>
+            I have good knowledge of Java Language which help me to code any
+            program related to java language very easily by using java concept
+            like OOPs,Exception handling,Collection etc.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------------------------Hobbies-----------------------------  -->
+  <div id="hobbies">
+    <div class="container">
+      <h1 class="sub-title">My Hobbies</h1>
+      <div class="hobbie-list">
+        <div class="hobbie">
+          <img src="./Image/WM.jpeg" />
+          <div class="layer">
+            <h3>Watching Movies</h3>
             <p>
-              I have good knowledge of HTML,CSS & JavaScript which help me to
-              design a beautiful web pages or websites using HTML,CSS &
-              Javascript,i am also learning Bootstrap,Tailwind CSS from Jspider.
+              I love watching different kinds of movies whenever I am
+              free.Watching movies is a fun and informative.
             </p>
-            <a href="#">Learn more</a>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
           </div>
-          <div>
-            <i class="fas fa-crop-alt"></i>
-            <h2>Database</h2>
+        </div>
+        <div class="hobbie">
+          <img src="./Image/RB.jpeg" />
+          <div class="layer">
+            <h3>Reading Books</h3>
             <p>
-              I have good knowledge of JDBC,Servlet,Framework & SQL by using
-              these concept i can eaisly perform CRUD opration as well as store
-              Websites data,Applications data,any data in database.
+              I love reading different kinds of books whenever I am free.It
+              leads to the all-round development of your brain and personality
             </p>
-            <a href="#">Learn more</a>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
           </div>
-          <div>
-            <i class="fab fa-app-store"></i>
-            <h2>Programming language</h2>
+        </div>
+        <div class="hobbie">
+          <img src="./Image/H3.jfif" />
+          <div class="layer">
+            <h3>Helping Others</h3>
             <p>
-              I have good knowledge of Java Language which help me to code any
-              program related to java language very easily by using java concept
-              like OOPs,Exception handling,Collection etc.
+              I love Helping Others People's whenever He/She need help from me
+              or in that situation. I feel happy while helping others.
             </p>
-            <a href="#">Learn more</a>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
       </div>
+      <a href="#" class="btn">See more</a>
     </div>
-    <!-- --------------------------Hobbies-----------------------------  -->
-    <div id="hobbies">
-      <div class="container">
-        <h1 class="sub-title">My Hobbies</h1>
-        <div class="hobbie-list">
-          <div class="hobbie">
-            <img src="./Image/WM.jpeg" />
-            <div class="layer">
-              <h3>Watching Movies</h3>
-              <p>
-                I love watching different kinds of movies whenever I am
-                free.Watching movies is a fun and informative.
-              </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
+  </div>
+  <!-- --------------Contact--------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i>anandtripathi1205@gmail.com</p>
+          <p><i class="fas fa-phone-square-alt"></i>9625506245</p>
+          <div class="social">
+            <ul class="wrapper">
+              <li class="icon facebook">
+                <a href="mailto:anandtripathi1205@gmail.com" target="_blank">
+                  <span class="tooltip">Email</span>
+                  <span><i class="fa-solid fa-envelope"></i></span>
+                </a>
+              </li>
+              <li class="icon twitter">
+                <a href="https://twitter.com/AnandTr88706072" target="_blank">
+                  <span class="tooltip">Twitter</span>
+                  <span><i class="fab fa-twitter"></i></span>
+                </a>
+              </li>
+              <li class="icon instagram">
+                <a href="https://www.instagram.com/__a.n.a.n.d_t.r.i.p.a.t.h.i__/" target="_blank">
+                  <span class="tooltip">Instagram</span>
+                  <span><i class="fab fa-instagram"></i></span>
+                </a>
+              </li>
+              <li class="icon github">
+                <a href="https://github.com/Anand12T" target="_blank">
+                  <span class="tooltip">Github</span>
+                  <span><i class="fab fa-github"></i></span>
+                </a>
+              </li>
+              <li class="icon youtube">
+                <a href="">
+                  <span class="tooltip">Youtube</span>
+                  <span><i class="fab fa-youtube"></i></span>
+                </a>
+              </li>
+              <li class="icon linkedin">
+                <a href="https://www.linkedin.com/in/anandtripathi1205/" target="_blank">
+                  <span class="tooltip">Linkedin</span>
+                  <span><i class="fab fa-linkedin"></i></span>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="hobbie">
-            <img src="./Image/RB.jpeg" />
-            <div class="layer">
-              <h3>Reading Books</h3>
-              <p>
-                I love reading different kinds of books whenever I am free.It
-                leads to the all-round development of your brain and personality
-              </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <div class="hobbie">
-            <img src="./Image/H3.jfif" />
-            <div class="layer">
-              <h3>Helping Others</h3>
-              <p>
-                I love Helping Others People's whenever He/She need help from me
-                or in that situation. I feel happy while helping others.
-              </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
+          <a href="./Image/Resume.pdf" download class="btn btn2">Download Resume</a>
         </div>
-        <a href="#" class="btn">See more</a>
-      </div>
-    </div>
-    <!-- --------------Contact--------------- -->
-    
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fas fa-paper-plane"></i>anandtripathi1205@gmail.com</p>
-            <p><i class="fas fa-phone-square-alt"></i>9625506245</p>
-            <div class="social">
-              <ul class="wrapper">
-                     <li class="icon facebook">
-                        <a href="mailto:anandtripathi1205@gmail.com" target="_blank">
-                          <span class="tooltip">Email</span>
-                          <span><i class="fa-solid fa-envelope"></i></span>
-                        </a>
-                     </li>
-                     <li class="icon twitter">
-                        <a href="https://twitter.com/AnandTr88706072" target="_blank">
-                          <span class="tooltip">Twitter</span>
-                          <span><i class="fab fa-twitter"></i></span>
-                        </a>
-                     </li>
-                     <li class="icon instagram">
-                        <a href="https://www.instagram.com/__a.n.a.n.d_t.r.i.p.a.t.h.i__/" target="_blank">
-                          <span class="tooltip">Instagram</span>
-                          <span><i class="fab fa-instagram"></i></span>
-                        </a>
-                     </li>
-                     <li class="icon github">
-                      <a href="https://github.com/Anand12T" target="_blank">
-                        <span class="tooltip">Github</span>
-                        <span><i class="fab fa-github"></i></span>
-                      </a>
-                     </li>
-                     <li class="icon youtube">
-                       <a href="">
-                         <span class="tooltip">Youtube</span>
-                         <span><i class="fab fa-youtube"></i></span>
-                       </a>
-                     </li>
-                     <li class="icon linkedin">
-                       <a href="https://www.linkedin.com/in/anandtripathi1205/" target="_blank">
-                         <span class="tooltip">Linkedin</span>
-                         <span><i class="fab fa-linkedin"></i></spa>
-                       </a>
-                     </li>
-                  </ul>
-            
-            </div>
-            <a href="./Image/Resume.pdf" download class="btn btn2"
-              >Download Resume</a
-            >
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet" action="https://formspree.io/f/xrgnovav" method="post">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2 btn3">Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet" action="https://formspree.io/f/xrgnovav" method="post">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2 btn3">Submit</button>
+          </form>
+          <span id="msg"></span>
         </div>
       </div>
-      <div class="copyright">
-        <p>Copyright © Anandtripathi,<i class="fas fa-heart"></i>2024 .</p>
-      </div>
     </div>
-    <script>
-      var tablinks = document.getElementsByClassName('tab-links')
-      var tabcontents = document.getElementsByClassName('tab-contents')
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove('active-link')
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove('active-tab')
-        }
-        event.currentTarget.classList.add('active-link')
-        document.getElementById(tabname).classList.add('active-tab')
-      }
-    </script>
-
-    <script>
-      var sidemeu = document.getElementById('sidemenu')
-      function openmenu() {
-        sidemeu.style.right = '0'
-      }
-      function closemenu() {
-        sidemeu.style.right = '-200px'
-      }
-    </script>
-    <!-- <script>
-      const scriptURL =
-        'https://script.google.com/macros/s/AKfycbzeDPAqEXYP5ZOFNzrU2h-TfihbhoF9h18Op7KnoApVtL0tz_Wgm1jyrGd7Vo2Z-MN0/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg = document.getElementById('msg')
-
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then(response => {
-            msg.innerHTML = 'Message Sent Successfully'
-            setTimeout(function () {
-              msg.innerHTML = ''
-            }, 5000)
-            form.reset()
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script> -->
-  </body>
+    <div class="copyright">
+      <p>Copyright © Anandtripathi,<i class="fas fa-heart"></i>2024.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
